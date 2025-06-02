@@ -1,58 +1,111 @@
 # SoundCloud Playlist Manager
 
-A modern web application that allows users to create and manage personal playlists using SoundCloud embedded links. The application features a beautiful, responsive design with both light and dark themes.
+A modern web application for managing SoundCloud playlists with advanced features and a beautiful user interface.
 
 ## Features
 
-- Create and manage multiple playlists
-- Add SoundCloud tracks to playlists using embedded links
+### Playlist Management
+- Create, edit, and delete playlists
+- Add custom playlist descriptions and cover images
+- Categorize playlists with tags
+- Share playlists with others
+- Import/export playlist data
+- Duplicate playlists
+- Drag and drop playlist reordering
+
+### Track Management
+- Add SoundCloud tracks to playlists
 - Like/unlike tracks
-- Filter playlists and tracks
-- Dark/Light theme support
+- Add track notes and comments
+- Rate tracks (1-5 stars)
+- Track play count and duration
+- Reorder tracks within playlists
+- Filter tracks by various criteria
+- Search across all playlists
+
+### Organization Features
+- Filter playlists by category/tags
+- Sort playlists by name, date, or track count
+- Search functionality across all content
+- Automatic "Favorites" playlist for liked tracks
+- "Recently Added" section
+- "Most Played" section
+
+### User Experience
+- Beautiful, responsive design
+- Light/dark theme support
+- Keyboard shortcuts for common actions
+- Drag and drop functionality
+- Smooth animations and transitions
+- Mini-player for continuous playback
+- Grid/list view toggle
+
+### Data Management
 - Persistent storage using IndexedDB
+- Backup and restore functionality
+- Playlist statistics and analytics
+- Offline support
+- Data caching for better performance
+
+### Accessibility
+- ARIA labels and roles
+- Keyboard navigation
+- High contrast mode
+- Screen reader support
 - Responsive design for all devices
 
-## Technical Stack
-
-- React with TypeScript
-- Material-UI for components and theming
-- IndexedDB for local storage
-- Vite for build tooling
+## Technical Features
+- Built with React and TypeScript
+- Material-UI with custom theming
+- IndexedDB for data persistence
+- Responsive design
+- Progressive Web App capabilities
+- GitHub Pages deployment
+- Comprehensive Git history
 
 ## Getting Started
 
-1. Clone the repository
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+1. Clone the repository:
+```bash
+git clone [repository-url]
+```
+
 2. Install dependencies:
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
+
 3. Start the development server:
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
 
-## Application Flow
+4. Build for production:
+```bash
+npm run build
+```
 
-1. **Playlist Management**
-   - Create new playlists
-   - Delete existing playlists
-   - Rename playlists
-   - View all playlists
+## Development Workflow
+1. Create feature branch
+2. Implement changes
+3. Test thoroughly
+4. Create pull request
+5. Review and merge
 
-2. **Track Management**
-   - Add tracks using SoundCloud embedded links
-   - Remove tracks from playlists
-   - Like/unlike tracks
-   - Filter tracks by name or artist
+## Deployment
+The application is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
-3. **Theme**
-   - Toggle between light and dark themes
-   - Theme preference is saved in local storage
+## Contributing
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
-4. **Data Persistence**
-   - All playlists and tracks are stored in IndexedDB
-   - Data persists across browser sessions
-
-## Development Progress
-
-The application development is tracked through Git commits, showing the evolution of features and improvements over time. Each commit represents a working version of the application.
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.

@@ -6,10 +6,10 @@ export interface Track {
   liked: boolean;
   createdAt: number;
   playCount: number;
-  comments: Comment[];
   duration?: number;
   rating?: number;
   notes?: string;
+  comments: Comment[];
 }
 
 export interface Comment {
@@ -21,16 +21,16 @@ export interface Comment {
 export interface Playlist {
   id: string;
   name: string;
+  description?: string;
+  coverImage?: string;
   tracks: Track[];
   createdAt: number;
   updatedAt: number;
+  category?: string;
   tags: string[];
   isPublic: boolean;
   playCount: number;
   viewCount: number;
-  description?: string;
-  coverImage?: string;
-  category?: string;
 }
 
 export interface AppSettings {
@@ -48,8 +48,4 @@ export interface BackupData {
   settings: AppSettings;
   version: string;
   timestamp: number;
-}
-
-export interface ThemeMode {
-  mode: 'light' | 'dark' | 'high-contrast';
 } 
